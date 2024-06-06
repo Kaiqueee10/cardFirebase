@@ -1,0 +1,144 @@
+/* Configuração geral do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte clara e legível */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 20px;
+    color: #333; /* Cor de texto que oferece bom contraste */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalhos principais */
+h1 {
+    font-size: 24px;
+    color: #0056b3; /* Cor que destaca a importância do cabeçalho */
+}
+
+/* Formulários */
+form {
+    background-color: #ffffff; /* Fundo claro para áreas interativas */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas para um design amigável */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para elevação */
+    margin-bottom: 20px; /* Espaçamento entre elementos de formulário */
+}
+
+/* Labels são claros e diretos */
+label {
+    display: block;
+    margin-bottom: 8px; /* Espaço abaixo do label para clareza */
+    font-weight: bold; /* Destaque para o texto do label */
+}
+
+/* Inputs padrão e seletores */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select {
+    width: 100%; /* Aproveitamento máximo do espaço disponível */
+    padding: 10px; /* Padding para facilidade de entrada de dados */
+    margin-bottom: 20px; /* Espaço entre campos para evitar erros */
+    border: 1px solid #ccc; /* Borda sutil para definir áreas clicáveis */
+    border-radius: 4px; /* Consistência com bordas arredondadas */
+}
+
+/* Botões com interatividade clara */
+button {
+    background-color: #007bff; /* Cor chamativa para ações principais */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer; /* Indicador visual de que é clicável */
+    transition: background-color 0.3s; /* Transição suave para feedback visual */
+}
+
+button:hover {
+    background-color: #0056b3; /* Mudança de cor ao passar o mouse para feedback */
+}
+
+/* Estilos adicionais para feedback visual de ações */
+button:active {
+    transform: translateY(1px); /* Efeito de clique sutil */
+}
+
+/* Limpar o estilo do navegador padrão para imagens em listas */
+ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    padding-left: 0; /* Ajustar alinhamento */
+}
+
+li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+    padding: 10px;
+    background-color: #e9ecef; /* Diferenciação sutil de itens */
+    border-radius: 4px;
+}
+
+/* Imagens dentro de itens da lista */
+img {
+    max-width: 100px; /* Limitação do tamanho da imagem para uniformidade */
+    height: auto;
+    display: block; /* Correção de alinhamento */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        margin: 30px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
