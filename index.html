@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <!-- Adicione outros links de menu conforme necessário -->
+        </ul>
+    </nav>
+    <h1>Cadastro de Alunos</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="turma">Turma:</label>
+        <input type="text" id="turma" name="turma"><br>
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso"><br>
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" name="imagem"><br>
+        <button type="button" onclick="enviarDadosParaFirebase()">Enviar Dados</button>
+    </form>
+    
+    <h1>Consultar Aluno</h1>
+    <form>
+        <label for="nomeConsulta">Nome:</label>
+        <input type="text" id="nomeConsulta" name="nomeConsulta"><br>
+        <button type="button" onclick="consultarAlunoPorNome()">Consultar</button>
+        <button type="button" onclick="limparConsulta()">Limpar</button>
+    </form>
+    <ul id="listaAlunos"></ul>
+
+    <!-- Inclua o Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
